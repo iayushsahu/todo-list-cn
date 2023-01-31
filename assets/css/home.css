@@ -1,251 +1,291 @@
-/* css design  */
-
-
-/* style for body */
-
-body {
-    margin: 0;
-    font-family: sans-serif;
-    background-color: rgb(0, 57, 62);
-}
-
-
-/* style for single task div container */
-
-.singleTask {
-    border: 1px solid white;
-    width: 50%;
-    height: 90px;
-    color: white;
-    display: flex;
-    align-items: baseline;
-    /* justify-content: space-evenly; */
-    position: relative;
-    left: 25%;
-}
-
-
-/* style for del check */
-
-.delechack {
-    margin: 15px;
-}
-
-
-/* style for category section */
-
-.catesec {
-    border: 1px solid black;
-    background-color: chartreuse;
-}
-
-
-/* style for TODO heading */
-
-.todoheading {
-    color: white;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 50px;
-}
-
-
-/* style for form */
-
-.form_class {
-    width: 50%;
-    text-align: center;
-    position: relative;
-    left: 25%;
-}
-
-
-/* style for description area */
-
-.desc_Class input {
-    height: 50px;
-    width: 100%;
-    margin: 15px;
-    text-align: center;
-    transition: transform 0.3s;
-    border-radius: 22px;
-    outline: none;
-}
-
-
-/* implemented some hover in description section */
-
-.desc_Class input:hover {
-    /* transform: scale(1.1); */
-    box-shadow: 0 0 5px 2px white;
-    background-color: bisque;
-}
-
-
-/* design for select and option START */
-
-
-/* style for select and options input input area */
-
-.select_and_input {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
-}
-
-.select_and_input select {
-    height: 45px;
-    width: 40%;
-    transition: transform 0.3s;
-    text-align: center;
-    margin-right: 50px;
-}
-
-.select_and_input input {
-    height: 45px;
-    width: 40%;
-    text-align: center;
-    transition: transform 0.3s;
-}
-
-.select_and_input select:hover {
-    box-shadow: 0 0 5px 2px white;
-    background-color: bisque;
-}
-
-.select_and_input input:hover {
-    box-shadow: 0 0 5px 2px white;
-    background-color: bisque;
-}
-
-
-/* design for select and option END */
-
-
-/* design for dates value */
-
-.datesValues {
-    transition: transform 0.3s;
-}
-
-.datesValues:hover {
-    box-shadow: 0 0 5px 2px white;
-    background-color: bisque;
-}
-
-
-/* design for button */
-
-.buttonDesign {
-    height: 50px;
-    width: 120px;
-    color: white;
-    transition: transform 0.3s;
-}
-
-.buttonDesign:hover {
-    box-shadow: 0 0 5px 2px white;
-    transform: scale(1.1);
-}
-
-.colorRed {
-    background-color: red;
-}
-
-.colorGrey {
-    background-color: gray;
-}
-
-.commonClass {
-    height: auto;
-    width: auto;
-    text-align: center;
-    padding: 5px;
-    border-radius: 15px;
-    color: white;
-    transition: transform 0.3s;
-}
-
-.commonClass:hover {
-    box-shadow: 0 0 5px 2px rgb(14, 6, 6);
-    transform: scale(1.2);
-}
-
-
-/* design for edit sction */
-
-.editClass {
-    transition: transform 0.3s;
-    position: absolute;
-    left: 75%;
-    margin: 20px;
-}
-
-.editClass:hover {
-    box-shadow: 0 0 5px 2px rgb(14, 6, 6);
-    transform: scale(1.2);
-}
-
-.editClass a {
-    text-decoration: none;
-    color: white;
-    border: 1px solid white;
-    padding: 4px;
-    background-color: brown;
-}
-
-
-/* for placing placeholder in the center  */
-
-input[type="textarea"]::placeholder {
-    /* Firefox, Chrome, Opera */
-    text-align: center;
-}
-
-
-/* design for EDIT button*/
-
-.edit-button {
-    margin-top: 10px;
-    height: 30px;
-    width: 90px;
-    background-color: brown;
-    color: white;
-}
-
-input.delechack {
-    width: 17px;
-    height: 17px;
-}
-
-
-/* Design for different category */
-
-.work {
-    background-color: lightcoral;
-}
-
-.Personal {
-    background-color: skyblue;
-}
-
-.Claeaning {
-    background-color: green;
-}
-
-.Otheres {
-    background-color: teal;
-}
-
-.name_and_dueDate {
-    height: auto;
-    width: 200px;
-}
-
-.dueDate {
-    width: fit-content;
-}
-
-.color-white {
-    color: white;
-}
+        /* link for importing font style  */
+        
+        @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap");
+        /* css root for maintaining variable */
+        
+         :root {
+            --light-font-color: #57606f;
+            --dark-font-color: #2f3542;
+            --lable-font-size: 16px;
+            --general-font-size: 12px;
+            --button-font-size: 14.5px;
+            --hover-font-color: #101318;
+        }
+        /* reset all styling */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* body for positioning main container */
+        
+        body {
+            background-color: #0e1d2d;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: "Rubik", sans-serif;
+        }
+        /* main container that contain all the form and task list */
+        
+        .main_container {
+            width: 55%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #dfe7ff;
+        }
+        /* input taking section */
+        /* heading class */
+        
+        .heading_class {
+            color: var(--light-font-color);
+            padding: 5px;
+            margin: 5px;
+        }
+        /* main input section div */
+        
+        .form_class {
+            width: 100%;
+            height: 33%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        /* main form  */
+        
+        .main_form {
+            width: 95%;
+        }
+        /* div for decription */
+        
+        .desc_Class {
+            padding: 15px;
+        }
+        
+        .desc_Class>input {
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            padding: 15px;
+            font-size: 15px;
+        }
+        /* select and input for capturing category */
+        
+        .select_and_input {
+            padding: 15px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+        /* drop down menu for category */
+        /* calender input  */
+        
+        .category,
+        .datesValues {
+            color: var(--dark-font-color);
+            border: none;
+            padding: 13px 40px 13px 40px;
+            border-radius: 2px;
+            font-size: 15px;
+        }
+        /* wrapper for buttons */
+        
+        .button_wrapper {
+            padding: 15px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        /* both button class */
+        
+        .buttonDesign {
+            text-transform: capitalize;
+            border: none;
+            width: 100px;
+            height: 45px;
+            border-radius: 5px;
+            font-size: var(--button-font-size);
+            color: var(--dark-font-color);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        
+        .buttonDesign:hover {
+            color: var(--hover-font-color);
+        }
+        /* add task button */
+        
+        .colorGreen {
+            background-color: #4cd137;
+        }
+        /* delete task button */
+        
+        .colorRed {
+            background-color: #ff4137;
+            width: 115px;
+        }
+        /* edit button */
+        
+        .editBTNwrapper {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .edit-button {
+            background-color: #e2873c;
+        }
+        /* output (task list) section */
+        /* task wrapper that contain all the task  */
+        
+        .task_container {
+            height: 67%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-y: scroll;
+        }
+        
+        .task_container::-webkit-scrollbar {
+            width: 3px;
+        }
+        
+        .task_container::-webkit-scrollbar-thumb {
+            width: 3px;
+            border-radius: 2px;
+            background-color: var(--light-font-color);
+        }
+        
+        .task_container::-webkit-scrollbar-track {
+            width: 3px;
+            border-radius: 2px;
+            background-color: var(--hover-font-color);
+        }
+        /* single task that loop */
+        
+        .task_wrapper {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #fff;
+            border-top: 1px solid #d1d1d1;
+            border-bottom: 1px solid #d1d1d1;
+        }
+        
+        .singleTask {
+            width: 90%;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            text-transform: capitalize;
+            justify-content: space-between;
+        }
+        /* delete checked box */
+        
+        .delechack {
+            padding-bottom: 15px;
+        }
+        /* wrapper for discription due date */
+        
+        .disc_and_dueDate {
+            width: 70%;
+        }
+        /* discription para */
+        
+        .dispdsc {
+            color: var(--light-font-color);
+        }
+        /* due date para  */
+        
+        .dueDate {
+            font-size: var(--general-font-size);
+            color: var(--dark-font-color);
+            padding-top: 3px;
+        }
+        /* category section */
+        
+        .catesec {
+            display: flex;
+            width: 85px;
+            height: 40px;
+            color: var(--dark-font-color);
+            padding: 10px;
+            border-radius: 5px;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .catesec:hover {
+            color: var(--hover-font-color);
+        }
+        /* edit button */
+        
+        .editClass>a {
+            text-decoration: none;
+            color: var(--dark-font-color);
+        }
+        
+        .editClass:hover {
+            color: var(--hover-font-color);
+        }
+        /* classes for ccoloring category */
+        
+        .Personal {
+            background-color: #12CBC4;
+        }
+        
+        .Work {
+            background-color: #ED4C67;
+        }
+        
+        .School {
+            background-color: #ffa502;
+        }
+        
+        .Cleaning {
+            background-color: #009432;
+        }
+        
+        .Other {
+            background-color: #747d8c;
+        }
+        
+        @media only screen and (max-width: 1000px) {
+            .main_container {
+                width: 70%;
+            }
+        }
+        
+        @media only screen and (max-width: 768px) {
+            /* main wrapper which contain all */
+            .main_container {
+                width: 100%;
+            }
+        }
+        
+        @media only screen and (max-width: 500px) {
+            .category,
+            .datesValues {
+                padding: 10px 20px 10px 20px;
+            }
+            .singleTask {
+                width: 100%;
+                padding: 10px;
+            }
+            .dispdsc {
+                font-size: 13px;
+            }
+            .catesec {
+                font-size: 13px;
+            }
+            .delechack {
+                margin-right: 5px;
+            }
+        }
