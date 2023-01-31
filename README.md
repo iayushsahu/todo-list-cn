@@ -21,7 +21,6 @@ It is a simple TODO application using NodeJS and MongDB. where a user of this ap
 ![](images/full_screen_view.png)
 ![](images/edit_page_view.png)
 ![](images/mobile_view.png)
-![](images/tablet_view.png)
 
 ## My process
 
