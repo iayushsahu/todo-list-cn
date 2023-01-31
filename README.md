@@ -11,8 +11,6 @@ It is  Coding Ninjas Major project assignment. Please do visit the Coding Ninjas
   - [What I learned](#what-i-learned)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-- [Deploy Link](#deployed-link)
 
 ## Overview
 
@@ -20,8 +18,8 @@ It is a simple TODO application using NodeJS and MongDB. where a user of this ap
 
 ### Screenshot
 
-![](images/image1.png)
-![](images/Screenshot.png)
+![](images/)
+![](images/)
 
 ## My process
 
