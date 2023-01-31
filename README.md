@@ -19,7 +19,7 @@ It is a simple TODO application using NodeJS and MongDB. where a user of this ap
 ### Screenshot
 
 ![](images/full_screen_view.png)
-![](images/edit_page_view.png =100x20)
+![](images/edit_page_view.png)
 ![](images/mobile_view.png)
 ![](images/tablet_view.png)
 
